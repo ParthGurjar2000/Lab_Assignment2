@@ -4,8 +4,7 @@
  */
 package model;
 
-import java.io.File;
-import javax.swing.Icon;
+import javax.swing.ImageIcon;
 
 
 /**
@@ -13,6 +12,11 @@ import javax.swing.Icon;
  * @author Parth Gurjar
  */
 public class Employee {
+
+    @Override
+    public String toString() {
+        return Employeeid;
+    }
 
 
     private String Name;
@@ -22,11 +26,11 @@ public class Employee {
     private String Startdate;
     private String Level;
     private String TeamInfo;
-    private String PositonTitle;
+    private String PositionTitle;
     private String ContactInfo;
     private String Number;
     private String EmailAddress;
-    private File Photo;
+    private ImageIcon Photo;
 
     public String getName() {
         return Name;
@@ -85,11 +89,11 @@ public class Employee {
     }
 
     public String getPositonTitle() {
-        return PositonTitle;
+        return PositionTitle;
     }
 
     public void setPositonTitle(String PositonTitle) {
-        this.PositonTitle = PositonTitle;
+        this.PositionTitle = PositonTitle;
     }
 
     public String getContactInfo() {
@@ -116,20 +120,31 @@ public class Employee {
         this.EmailAddress = EmailAddress;
     }
 
-    public File getPhoto() {
+    public ImageIcon getPhoto() {
         return Photo;
     }
 
-    public void setPhoto(File Photo) {
+    public void setPhoto(ImageIcon Photo) {
         this.Photo = Photo;
         
     }
-    public Icon getphoto() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+   // public Icon getphoto() {
+       // throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
 
+    //public void setPhoto() {
+      //  throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
+
+
+
+    
+    
+    
+
+    
+   // }
    
         
     
     
-}
+//}

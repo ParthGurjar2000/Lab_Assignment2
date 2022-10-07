@@ -18,7 +18,7 @@ public class EmployeeHistory {
     
     public EmployeeHistory(){
         
-        this.history = new ArrayList<>();
+        this.history = new ArrayList<Employee>();
     }
 
     public ArrayList<Employee> getHistory() {
@@ -29,17 +29,14 @@ public class EmployeeHistory {
         this.history = history;
     }
 
-    public Employee addNewEmployee() {
-        Employee newEmployee = new Employee();
+    public void addNewEmployee(Employee newEmployee) {
         history.add(newEmployee);
-        return newEmployee;
-       // throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+    public void deleteEmployee(Employee em){
+        history.remove(em);
     }
 
-    public void setPhoto(File f) {
-        
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
+   
 
    
     

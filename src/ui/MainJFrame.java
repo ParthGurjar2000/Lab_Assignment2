@@ -4,7 +4,6 @@
  */
 package ui;
 
-import java.awt.Component;
 import model.EmployeeHistory;
 
 /**
@@ -106,11 +105,10 @@ public class MainJFrame extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
+ 
     private void BtnCreateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnCreateActionPerformed
         // TODO add your handling code here:
         CreateJPanel createPanel = new CreateJPanel(history);
-        Component createJPanel = null;
         Splitpanel.setRightComponent(createPanel); 
        
     }//GEN-LAST:event_BtnCreateActionPerformed
@@ -118,7 +116,6 @@ public class MainJFrame extends javax.swing.JFrame {
     private void BtnViewActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnViewActionPerformed
         // TODO add your handling code here:
         ViewJPanel viewPanel = new ViewJPanel(history);
-        Component viewJPanel = null;
         Splitpanel.setRightComponent(viewPanel);
         
     }//GEN-LAST:event_BtnViewActionPerformed
