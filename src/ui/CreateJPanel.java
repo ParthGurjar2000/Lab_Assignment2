@@ -295,6 +295,7 @@ public class CreateJPanel extends javax.swing.JPanel {
     private void SavebtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SavebtnActionPerformed
         // TODO add your handling code here:
         String Name = txtname.getText();
+        //int employeeID = Integer.parseInt(txteid.getText());
         String Employeeid = txteid.getText();
         String age = txtage.getText();
         String Gender = txtgender.getText();
